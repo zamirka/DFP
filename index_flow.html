@@ -4,73 +4,21 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- 1. skin -->
+        <link rel="stylesheet" href="//releases.flowplayer.org/5.5.2/skin/minimalist.css">
+ 
+        <!-- 2. jquery library -->
+        <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+ 
+        <!-- 3. flowplayer -->
+        <script src="//releases.flowplayer.org/5.5.2/flowplayer.min.js"></script>
     </head>
     <body>
-    <object width="210" height="119" id="live-tv_api" name="live-tv_api" data="http://v6.top.rbk.ru/rbc_static/top-20141205_1840/vendor/flowplayer/flowplayer.commercial.swf" type="application/x-shockwave-flash">
-        <param name="allowfullscreen" value="true">
-        <param name="allowscriptaccess" value="always">
-        <param name="quality" value="high">
-        <param name="bgcolor" value="#000000">
-        <param name="wmode" value="opaque">
-        <param name="flashvars" value="config=
-{
-    &quot;key&quot;:&quot;#$08230e583b7c1a09084&quot;,
-    &quot;play&quot;:
-    {
-        &quot;opacity&quot;:0,
-        &quot;label&quot;:null,
-        &quot;replayLabel&quot;:null
-    },
-    &quot;contextMenu&quot;:
-    [{
-        &quot;RosBusinessConsulting&quot;:&quot;function()&quot;
-    }],
-    &quot;canvas&quot;:
-    {
-        &quot;backgroundGradient&quot;:&quot;none&quot;
-    },
-    &quot;plugins&quot;:
-    {
-        &quot;controls&quot;:null,
-        &quot;httpstreaming&quot;:
-        {
-            &quot;url&quot;:&quot;http://v6.top.rbk.ru/rbc_static/top-20141205_1840/vendor/flowplayer/flashlsFlowPlayer.swf&quot;,
-            &quot;hls_debug&quot;:false,
-            &quot;hls_debug_debug2&quot;:false,
-            &quot;hls_minbufferlength&quot;:1,
-            &quot;hls_maxbufferlength&quot;:40,
-            &quot;hls_startfromlowestlevel&quot;:false,
-            &quot;hls_seekfromlowestlevel&quot;:false,
-            &quot;hls_live_flushurlcache&quot;:true
-        }
-    },
-    &quot;clip&quot;:
-    {
-        &quot;accelerated&quot;:true,
-        &quot;scaling&quot;:&quot;fit&quot;,
-        &quot;url&quot;:&quot;http://online.video.rbc.ru/online/rbctv_224p/index.m3u8?region%3Dbelarus&quot;,
-        &quot;ipadUrl&quot;:&quot;http://online.video.rbc.ru/online/rbctv_224p/index.m3u8?region=belarus&quot;,
-        &quot;urlResolvers&quot;:&quot;httpstreaming&quot;,
-        &quot;lang&quot;:&quot;ru&quot;,
-        &quot;provider&quot;:&quot;httpstreaming&quot;,
-        &quot;autoPlay&quot;:true
-    },
-    &quot;playerId&quot;:&quot;live-tv&quot;,
-    &quot;playlist&quot;:
-    [{
-        &quot;accelerated&quot;:true,
-        &quot;scaling&quot;:&quot;fit&quot;,
-        &quot;url&quot;:&quot;http://online.video.rbc.ru/online/rbctv_224p/index.m3u8?region%3Dbelarus&quot;,
-        &quot;ipadUrl&quot;:&quot;http://online.video.rbc.ru/online/rbctv_224p/index.m3u8?region=belarus&quot;,
-        &quot;urlResolvers&quot;:&quot;httpstreaming&quot;,
-        &quot;lang&quot;:&quot;ru&quot;,
-        &quot;provider&quot;:&quot;httpstreaming&quot;,
-        &quot;autoPlay&quot;:true
-    }]
-}">
-    </object>
-
+    <div class="flowplayer play-button fixed-controls">
+        <video>
+            <source type="application/x-mpegurl" src="http://online.video.rbc.ru/online/rbctv_224p/index.m3u8?region%3Dbelarus">
+            <source type="video/flash" src="stream">
+        </video>
+    </div>
     </body>
 </html>
