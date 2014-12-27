@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- basic stylesheet -->
+		<link rel="stylesheet" href="royalslider/royalslider.css">
+
+		<!-- skin stylesheet (change it if you use another) -->
+		<link rel="stylesheet" href="royalslider/skins/default/rs-default.css"> 
+
+		<!-- Plugin requires jQuery 1.7+  -->
+		<!-- If you already have jQuery on your page, you shouldn't include it second time. -->
+		<script src='royalslider/jquery-1.8.3.min.js'></script>
+
+		<!-- Main slider JS script file --> 
+		<!-- Create it with slider online build tool for better performance. -->
+		<script src="royalslider/jquery.royalslider.min.js"></script>
+		<style type="text/css">
+			.royalSlider {
+  width: 100%;
+  height: 300px;
+}
+		</style>
+	</head>
+	<body>
+		<div class="royalSlider rsDefault">
+		    <!-- simple image slide -->
+		    <img class="rsImg" src="1.jpg" alt="image desc" />
+
+		    <!-- simple image slide -->
+		    <img class="rsImg" src="2.jpg" alt="image desc" />
+			
+			<!-- simple image slide -->
+		    <img class="rsImg" src="3.jpg" alt="image desc" />
+		</div>	
+	<script>
+    jQuery(document).ready(function($) {
+        $(".royalSlider").royalSlider({
+            // options go here
+            // as an example, enable keyboard arrows nav
+            keyboardNavEnabled: true
+        });  
+    });
+</script>
+
+	</body>
+</html>
