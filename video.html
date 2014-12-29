@@ -9,7 +9,7 @@
 		<h1>Video demo for rbc.ru</h1>
 		<div id="my-video"></div>
 			<script type="text/javascript">
-			jwplayer("my-video").setup({
+			$jp = jwplayer("my-video").setup({
 			 file: "http://online.video.rbc.ru/online/rbctv_224p/index.m3u8",
 			 width: "580",
 			 height: "370",
@@ -18,7 +18,7 @@
 			});
 
 			$( document ).ready(function() {
-				jwplayer.play();
+				$jp.play();
 			});
 		</script>
 	</body>
