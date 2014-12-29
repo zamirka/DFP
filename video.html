@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 		<script src="http://p.jwpcdn.com/6/11/jwplayer.js"></script>
 		<script>jwplayer.key="vEWJXMWqLF70YcVrJzfi+3bLryzP3QZDvhMuidiq8fQ="</script>
 	</head>
@@ -13,9 +14,12 @@
 			 width: "580",
 			 height: "370",
 			 primary: "flash",
-			 androidhls: true,
-			 autostart: true
+			 androidhls: true
 			});
-</script>
+
+			$( document ).ready(function() {
+				jwplayer.play();
+			});
+		</script>
 	</body>
 </html>
