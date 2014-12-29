@@ -18,8 +18,7 @@
 			});
 
 			$( document ).ready(function() {
-				setTimeout('alert("прошла секунда")', 2000)
-				$jp.play();
+				setTimeout(function() { $jp.play(); }, 2000);
 			});
 		</script>
 	</body>
