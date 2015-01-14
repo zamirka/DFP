@@ -41,7 +41,7 @@
 				$theStream = $dimensions[$('#qualitySelector').val()];
 
 				$('#doSomething').click(function() {
-					$player = $('#my-video');
+					$player = jwplayer("my-video");
 					$player.setup({
 						width: $theStream.width,
 						height: $theStream.height,
