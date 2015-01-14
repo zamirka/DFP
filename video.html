@@ -18,33 +18,39 @@
 				autostart: false,
 				mute: true
 			});
-
 		</script>
 
 		<input id="doSomething" type="submit" value="Do something" />
 		<select id="qualitySelector" name="Quality">
-			<option value="http://online.video.rbc.ru/online/rbctv_128p/index.m3u8">128p - 228x128</option>
-			<option value="http://online.video.rbc.ru/online/rbctv_224p/index.m3u8">224p - 398x224</option>
-			<option value="http://online.video.rbc.ru/online/rbctv_360p/index.m3u8">360p - 640x360</option>
-			<option value="http://online.video.rbc.ru/online/rbctv_480p/index.m3u8">480p - 854x480</option>
-			<option value="http://online.video.rbc.ru/online/rbctv_576p/index.m3u8">576p - 1024x576</option>
+			<option value="p128">128p - 228x128</option>
+			<option value="p224">224p - 398x224</option>
+			<option value="p360">360p - 640x360</option>
+			<option value="p480">480p - 854x480</option>
+			<option value="p576">576p - 1024x576</option>
 		</select>
 		
 		<script type="text/javascript">
 			$(document).ready(function() {
-				// setTimeout(function() {
-				// 	$jp.play();
-				// }, 2000);
-				// setTimeout(function() {
-				// 	//$jp.setFullscreen(true) 
-				// }, 4000);
+				$dimensions = $.parseJSON('{\
+				"p128": {"width": "228", "height": "128", "source": "http://online.video.rbc.ru/online/rbctv_128p/index.m3u8"},\
+				"p224": {"width": "398", "height": "224", "source": "http://online.video.rbc.ru/online/rbctv_224p/index.m3u8"},\
+				"p360": {"width": "640", "height": "360", "source": "http://online.video.rbc.ru/online/rbctv_360p/index.m3u8"},\
+				"p480": {"width": "854", "height": "480", "source": "http://online.video.rbc.ru/online/rbctv_480p/index.m3u8"},\
+				"p576": {"width": "1024", "height":"576", "source": "http://online.video.rbc.ru/online/rbctv_576p/index.m3u8"}}');
 
-				$('#doSomething').click(function(){
-					$('my-video').load([{file:$('#qualitySelector').val()}]);
+				$theStream = $dimensions[$('#qualitySelector').val()];
+
+				$('#doSomething').click(function() {
+					$player = $('my-video');
+					$player.setup({
+						width: $theStream.width,
+						height: $theStream.height,
+					});
+					$player.load([{
+						file: $theStream.source
+					}]);
 					$('my-video').play(true);
 				});
-				//$('myPlayer').load([{file:$('#qualitySelector').val()}]);
-				//$('myPlayer')
 			});
 		</script>
 	</body>
