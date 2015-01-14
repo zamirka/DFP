@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 		<script src="http://p.jwpcdn.com/6/11/jwplayer.js"></script>
 		<script>jwplayer.key="vEWJXMWqLF70YcVrJzfi+3bLryzP3QZDvhMuidiq8fQ="</script>
 	</head>
 	<body>
 		<h1>Video demo for rbc.ru</h1>
-		<div id="my-video"></div>
+		<div id="myPlayer"></div>
 			<script type="text/javascript">
 			$jp = jwplayer("my-video").setup({
 				file: "http://online.video.rbc.ru/online/rbctv.m3u8",
@@ -26,18 +26,23 @@
 				// setTimeout(function() {
 				// 	//$jp.setFullscreen(true) 
 				// }, 4000);
-			});
 
-			function btnClick() {
-				alert("Starting");
-				if (typeof($jp) != 'undefined') {
-					alert($jp.getQualityLevels());
-				} else {
-					alert("Player object not defined!");
-				}
-				//$jp.file = "http://online.video.rbc.ru/online/rbctv_480p/index.m3u8";
-			}
+				$('#doSomething').click(function(){
+					$('myPlayer').load([{file:$('#qualitySelector').val()}]);
+					$('myPlayer').play();
+				});
+				$('myPlayer').load([{file:$('#qualitySelector').val()}]);
+				$('myPlayer')
+			});
 		</script>
-		<input type="button" onclick="btnClick()" value="Do something" />
+
+		<input id="doSomething" type="submit" value="Do something" />
+		<select id="qualitySelector" name="Quality">
+			<option value="http://online.video.rbc.ru/online/rbctv_128p/index.m3u8">128p - 228x128</option>
+			<option value="http://online.video.rbc.ru/online/rbctv_224p/index.m3u8">224p - 398x224</option>
+			<option value="http://online.video.rbc.ru/online/rbctv_360p/index.m3u8">360p - 640x360</option>
+			<option value="http://online.video.rbc.ru/online/rbctv_480p/index.m3u8">480p - 854x480</option>
+			<option value="http://online.video.rbc.ru/online/rbctv_576p/index.m3u8">576p - 1024x576</option>
+		</select>
 	</body>
 </html>
