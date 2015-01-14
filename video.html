@@ -8,18 +8,6 @@
 	<body>
 		<h1>Video demo for rbc.ru</h1>
 		<div id="my-video"></div>
-			<script type="text/javascript">
-			$jp = jwplayer("my-video").setup({
-				file: "http://online.video.rbc.ru/online/rbctv_128p/index.m3u8",
-				width: '228',
-				height: '128',
-				primary: 'html5',
-				androidhls: true,
-				autostart: false,
-				mute: true
-			});
-		</script>
-
 		<input id="doSomething" type="submit" value="Do something" />
 		<select id="qualitySelector" name="Quality">
 			<option value="p128">128p - 228x128</option>
@@ -31,31 +19,29 @@
 		
 		<script type="text/javascript">
 			$(document).ready(function() {
+				$('#doSomething').click(manualChangeQuality);
+				manualChangeQuality();
+			});
+
+			function manualChangeQuality() {
 				$dimensions = $.parseJSON('{\
 				"p128": {"width": "228", "height": "128", "source": "http://online.video.rbc.ru/online/rbctv_128p/index.m3u8"},\
 				"p224": {"width": "398", "height": "224", "source": "http://online.video.rbc.ru/online/rbctv_224p/index.m3u8"},\
 				"p360": {"width": "640", "height": "360", "source": "http://online.video.rbc.ru/online/rbctv_360p/index.m3u8"},\
 				"p480": {"width": "854", "height": "480", "source": "http://online.video.rbc.ru/online/rbctv_480p/index.m3u8"},\
 				"p576": {"width": "1024", "height":"576", "source": "http://online.video.rbc.ru/online/rbctv_576p/index.m3u8"}}');
-
-				$('#doSomething').click(function() {
-					$theStream = $dimensions[$('#qualitySelector').val()];
-					$player = jwplayer("my-video");
-					$player.setup({
-						file: $theStream.source,
-						width: $theStream.width,
-						height: $theStream.height,
-						primary: 'html5',
-						androidhls: true,
-						autostart: false,
-						mute: true
-					});
-					// $player.load([{
-					// 	file: $theStream.source
-					// }]);
-					$player.play(true);
+				$theStream = $dimensions[$('#qualitySelector').val()];
+				$player = jwplayer("my-video");
+				$player.setup({
+					file: $theStream.source,
+					width: $theStream.width,
+					height: $theStream.height,
+					primary: 'html5',
+					androidhls: true,
+					autostart: false,
+					mute: true
 				});
-			});
+			}
 		</script>
 	</body>
 </html>
