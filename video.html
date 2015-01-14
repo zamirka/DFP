@@ -38,9 +38,8 @@
 				"p480": {"width": "854", "height": "480", "source": "http://online.video.rbc.ru/online/rbctv_480p/index.m3u8"},\
 				"p576": {"width": "1024", "height":"576", "source": "http://online.video.rbc.ru/online/rbctv_576p/index.m3u8"}}');
 
-				$theStream = $dimensions[$('#qualitySelector').val()];
-
 				$('#doSomething').click(function() {
+					$theStream = $dimensions[$('#qualitySelector').val()];
 					$player = jwplayer("my-video");
 					$player.setup({
 						file: $theStream.source,
