@@ -28,13 +28,11 @@
 				// }, 4000);
 			});
 
-			function btnClick(){
-				if(typeof($jp) != 'undefined')
-				{
-					alert(getQualityLevels());
-				}
-				else
-				{
+			function btnClick() {
+				alert("Starting");
+				if (typeof($jp) != 'undefined') {
+					alert($jp.getQualityLevels());
+				} else {
 					alert("Player object not defined!");
 				}
 				//$jp.file = "http://online.video.rbc.ru/online/rbctv_480p/index.m3u8";
