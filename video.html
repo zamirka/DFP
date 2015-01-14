@@ -10,7 +10,7 @@
 		<div id="my-video"></div>
 			<script type="text/javascript">
 			$jp = jwplayer("my-video").setup({
-				file: "http://online.video.rbc.ru/online/rbctv_224p/index.m3u8",
+				file: "http://online.video.rbc.ru/online/rbctv.m3u8",
 				width: '220',
 				height: '123',
 				primary: 'html5',
@@ -29,10 +29,17 @@
 			});
 
 			function btnClick(){
-				alert("Wow");
-
+				if(typeof($jp) != 'undefined')
+				{
+					alert(getQualityLevels());
+				}
+				else
+				{
+					alert("Player object not defined!");
+				}
+				//$jp.file = "http://online.video.rbc.ru/online/rbctv_480p/index.m3u8";
 			}
 		</script>
-		<input type="button" onclick="btnClick()">Change stream</input>
+		<input type="button" onclick="btnClick()" value="Do something" />
 	</body>
 </html>
