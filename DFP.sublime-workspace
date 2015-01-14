@@ -1,0 +1,474 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"body",
+				"body"
+			],
+			[
+				"ty",
+				"type=  (attribute)"
+			],
+			[
+				"get",
+				"getvar2 (?)"
+			],
+			[
+				"getvar",
+				"getvar2 (?)"
+			],
+			[
+				"re",
+				"render"
+			],
+			[
+				"coll",
+				"collection"
+			],
+			[
+				"res",
+				"res (?)"
+			],
+			[
+				"http",
+				"http (?)"
+			],
+			[
+				"Mongo",
+				"MongoClient (?)"
+			],
+			[
+				"co",
+				"connect"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"set",
+				"setTimeout"
+			],
+			[
+				"y",
+				"ylabel"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 187.0,
+		"selected_items":
+		[
+			[
+				"install ",
+				"Package Control: Install Package"
+			],
+			[
+				"snip",
+				"Snippet: html"
+			],
+			[
+				"pack",
+				"Package Control: Enable Package"
+			],
+			[
+				"sytja",
+				"Set Syntax: JavaScript Next"
+			],
+			[
+				"dis",
+				"Package Control: Disable Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"disa",
+				"Package Control: Disable Package"
+			],
+			[
+				"sysjava",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"disable",
+				"Package Control: Disable Package"
+			],
+			[
+				"syntajava",
+				"Set Syntax: JavaScript Next"
+			],
+			[
+				"package",
+				"Package Control: Remove Package"
+			],
+			[
+				"listpa",
+				"Package Control: List Packages"
+			],
+			[
+				"listpack",
+				"Package Control: List Packages"
+			],
+			[
+				"packlis",
+				"Package Control: List Packages"
+			],
+			[
+				"upgrade",
+				"Package Control: Upgrade Package"
+			],
+			[
+				"upgar",
+				"Package Control: Upgrade Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"packlist",
+				"Package Control: List Packages"
+			],
+			[
+				"packc",
+				"Package Control: Upgrade Package"
+			],
+			[
+				"packinst",
+				"Package Control: Install Package"
+			],
+			[
+				"sni",
+				"Snippet: html"
+			],
+			[
+				"syn ht",
+				"Set Syntax: HTML"
+			],
+			[
+				"list",
+				"Package Control: List Packages"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ins",
+				"Package Control: Install Package"
+			],
+			[
+				"sinppe",
+				"Snippet: html"
+			],
+			[
+				"synta html",
+				"Set Syntax: HTML"
+			],
+			[
+				"synt",
+				"Set Syntax: Jade"
+			],
+			[
+				"Insta",
+				"Package Control: Install Package"
+			],
+			[
+				"xiki",
+				"Create Xiki Buffer"
+			],
+			[
+				"packa",
+				"Package Control: List Packages"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"Pack",
+				"Package Control: Install Package"
+			],
+			[
+				"forma",
+				"Format: Javascript"
+			],
+			[
+				"pa",
+				"Package Control: Install Package"
+			],
+			[
+				"Pac",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 602.0
+	},
+	"console":
+	{
+		"height": 367.0,
+		"history":
+		[
+			"node",
+			"import urllib.request,os,hashlib; h = '2deb499853c4371624f5a07e27c334aa' + 'bf8c4e67d14fb0525ba4f89698a6d7e1'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/zamirka/GitHub/DFP"
+	],
+	"file_history":
+	[
+		"/Users/zamirka/dev/M102_nodejs/views/error_template.html",
+		"/Users/zamirka/dev/M102_nodejs/node_modules/connect/node_modules/finalhandler/node_modules/on-finished/HISTORY.md",
+		"/Users/zamirka/dev/M102_nodejs/node_modules/connect/node_modules/finalhandler/node_modules/on-finished/README.md",
+		"/Users/zamirka/dev/M102_nodejs/node_modules/connect/node_modules/finalhandler/node_modules/on-finished/node_modules/ee-first/README.md",
+		"/Users/zamirka/dev/M102_nodejs/node_modules/mongodb/node_modules/bson/lib/bson/float_parser.js",
+		"/Users/zamirka/dev/M102_nodejs/node_modules/swig/node_modules/uglify-js/node_modules/optimist/test/_/argv.js",
+		"/Users/zamirka/dev/M102_nodejs/node_modules/swig/lib/tags/autoescape.js",
+		"/Users/zamirka/dev/M102_nodejs/views/getparams",
+		"/Users/zamirka/dev/M102_nodejs/server.js",
+		"/Users/zamirka/dev/M102_nodejs/M102_nodejs.sublime-project",
+		"/Users/zamirka/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/zamirka/Library/Application Support/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/Users/zamirka/Library/Application Support/Sublime Text 3/Packages/TernJS/TernJS.sublime-settings",
+		"/Users/zamirka/Library/Application Support/Sublime Text 3/Packages/User/SublimeCodeIntel.sublime-settings",
+		"/Users/zamirka/Library/Application Support/Sublime Text 3/Packages/SublimeCodeIntel/SublimeCodeIntel.sublime-settings",
+		"/Users/zamirka/dev/nodetest1/index.js",
+		"/Users/zamirka/dev/nodetest1/views/helloworld.jade",
+		"/Users/zamirka/dev/nodetest1/views/error.jade",
+		"/Users/zamirka/dev/nodetest1/node_modules/express/lib/view.js",
+		"/Users/zamirka/dev/nodetest1/data/journal/j._0",
+		"/Users/zamirka/dev/nodetest1/node_modules/.bin/jade",
+		"/Users/zamirka/.gitconfig",
+		"/Users/zamirka/Дополнительное соглашение_Гарантия.docx",
+		"/Users/zamirka/Library/Application Support/Sublime Text 3/Packages/Default/Default (OSX).sublime-keymap",
+		"/Users/zamirka/dev/nodetest1/node_modules/mongo/index.js",
+		"/Users/zamirka/dev/nodetest1/node_modules/mongodb/lib/mongodb/auth/mongodb_plain.js",
+		"/Users/zamirka/dev/nodetest1/node_modules/mongodb/lib/mongodb/mongo_client.js",
+		"/Users/zamirka/dev/nodetest1/data/mongod.lock",
+		"/Users/zamirka/dev/nodetest1/bin/www",
+		"/Users/zamirka/dev/nodetest1/app.js",
+		"/Users/zamirka/dev/nodetest1/views/userlist.jade",
+		"/Users/zamirka/dev/nodetest1/views/newuser.jade",
+		"/Users/zamirka/dev/nodetest1/views/layout.jade",
+		"/Users/zamirka/dev/nodetest1/views/index.jade",
+		"/Applications/Sublime Text.app/Contents/SharedSupport/bin/help",
+		"/Users/zamirka/dev/nodetest1/.codeintel/config",
+		"/Users/zamirka/Library/Application Support/Sublime Text 3/Packages/SublimeCodeIntel/Default (OSX).sublime-keymap",
+		"/Users/zamirka/Library/Application Support/Sublime Text 3/Packages/User/Default (OSX).sublime-keymap",
+		"/Users/zamirka/dev/nodetest1/package.json",
+		"/Users/zamirka/dev/nodetest1/public/stylesheets/style.css",
+		"/Users/zamirka/Library/Application Support/Sublime Text 3/Packages/User/Side Bar.sublime-settings",
+		"/Users/zamirka/Library/Application Support/Sublime Text 3/Packages/SideBarEnhancements/Side Bar.sublime-settings",
+		"/Users/zamirka/Library/Application Support/Sublime Text 3/Packages/TrailingSpaces/README.md",
+		"/Users/zamirka/Library/Application Support/Sublime Text 3/Packages/User/GutterColor.sublime-settings",
+		"/Users/zamirka/Library/Application Support/Sublime Text 3/Packages/Gutter Color/GutterColor.sublime-settings",
+		"/Users/zamirka/Library/Application Support/Sublime Text 3/Packages/SublimeREPL/SublimeREPL.sublime-settings",
+		"/Users/zamirka/dev/nodetest1/routes/index.js",
+		"/Users/zamirka/Library/Application Support/Sublime Text 3/Packages/Web Inspector 3/swi.sublime-settings",
+		"/Users/zamirka/Library/Application Support/Sublime Text 3/Packages/User/swi.sublime-settings",
+		"/Users/zamirka/dev/nodetest1/sample.js",
+		"/Users/zamirka/dev/javascripting/introduction.js",
+		"/Users/zamirka/Downloads/zero_pixel.eml",
+		"/Users/zamirka/GitHub/DFP/gallery/slider.html",
+		"/Users/zamirka/dev/rbc_banner.html",
+		"/Users/zamirka/GitHub/DFP/video.html",
+		"/Users/zamirka/GitHub/DFP/manifest.m3u8",
+		"/Users/zamirka/Downloads/461126.9.4.93/royalslider/dev/jquery.royalslider.js",
+		"/Users/zamirka/GitHub/DFP/index_flow.html",
+		"/Users/zamirka/dev/zeroPixel.html",
+		"/Users/zamirka/Downloads/РБК(12_) (черн)/240x400/240x400.html",
+		"/Users/zamirka/temp/test.js",
+		"/Volumes/My Passport/soft/Serials_Microsoft.txt",
+		"/Users/zamirka/Documents/Octave/Exersizes/mlclass-ex1/plotData.m",
+		"/Users/zamirka/Documents/Octave/Exersizes/mlclass-ex1/gradientDescent.m",
+		"/Users/zamirka/Documents/Octave/Exersizes/mlclass-ex1/ex1.m",
+		"/Users/zamirka/Documents/Octave/Exersizes/mlclass-ex1/computeCost.m",
+		"/Users/zamirka/Documents/Octave/Exersizes/mlclass-ex1/sigmoid.m",
+		"/Users/zamirka/Documents/Octave/Exersizes/mlclass-ex1/ex1data1.txt",
+		"/Users/zamirka/Documents/Octave/Exersizes/mlclass-ex1/warmUpExercise.m",
+		"/Users/zamirka/GitHub/DFP/index.html",
+		"/Users/zamirka/Documents/test_pages/index.html"
+	],
+	"find":
+	{
+		"height": 23.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"params",
+			"getvar2",
+			"getvar1",
+			"router",
+			"Router",
+			"router",
+			"si",
+			"router",
+			"req",
+			"\"",
+			"><\n"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"&quot;",
+			"\"",
+			"config=\n{\n    \"key\":\"#$08230e583b7c1a09084\",\n    \"play\":\n    {\n        \"opacity\":0,\n        \"label\":null,\n        \"replayLabel\":null\n    },\n    \"contextMenu\":\n    [{\n        \"RosBusinessConsulting\":\"function()\"\n    }],\n    \"canvas\":\n    {\n        \"backgroundGradient\":\"none\"\n    },\n    \"plugins\":\n    {\n        \"controls\":null,\n        \"httpstreaming\":\n        {\n            \"url\":\"http://v6.top.rbk.ru/rbc_static/top-20141205_1840/vendor/flowplayer/flashlsFlowPlayer.swf\",\n            \"hls_debug\":false,\n            \"hls_debug_debug2\":false,\n            \"hls_minbufferlength\":1,\n            \"hls_maxbufferlength\":40,\n            \"hls_startfromlowestlevel\":false,\n            \"hls_seekfromlowestlevel\":false,\n            \"hls_live_flushurlcache\":true\n        }\n    },\n    \"clip\":\n    {\n        \"accelerated\":true,\n        \"scaling\":\"fit\",\n        \"url\":\"http://online.video.rbc.ru/online/rbctv_224p/index.m3u8?region%3Dbelarus\",\n        \"ipadUrl\":\"http://online.video.rbc.ru/online/rbctv_224p/index.m3u8?region=belarus\",\n        \"urlResolvers\":\"httpstreaming\",\n        \"lang\":\"ru\",\n        \"provider\":\"httpstreaming\",\n        \"autoPlay\":true\n    },\n    \"playerId\":\"live-tv\",\n    \"playlist\":\n    [{\n        \"accelerated\":true,\n        \"scaling\":\"fit\",\n        \"url\":\"http://online.video.rbc.ru/online/rbctv_224p/index.m3u8?region%3Dbelarus\",\n        \"ipadUrl\":\"http://online.video.rbc.ru/online/rbctv_224p/index.m3u8?region=belarus\",\n        \"urlResolvers\":\"httpstreaming\",\n        \"lang\":\"ru\",\n        \"provider\":\"httpstreaming\",\n        \"autoPlay\":true\n    }]\n}"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"project": "DFP.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"app",
+				"app.js"
+			],
+			[
+				"fru",
+				"views/fruitPicker.html"
+			],
+			[
+				"",
+				"app.js"
+			],
+			[
+				"frui",
+				"views/fruitPicker.html"
+			],
+			[
+				"get",
+				"views/getparams.html"
+			],
+			[
+				"he",
+				"views/hello.html"
+			],
+			[
+				"viewja",
+				"views/index.jade"
+			],
+			[
+				"mongoinde",
+				"node_modules/mongo/index.js"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 184.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

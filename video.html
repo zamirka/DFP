@@ -10,22 +10,29 @@
 		<div id="my-video"></div>
 			<script type="text/javascript">
 			$jp = jwplayer("my-video").setup({
-			 file: "http://online.video.rbc.ru/online/rbctv_224p/index.m3u8",
-			 width: "580",
-			 height: "370",
-			 primary: "html5",
-			 //controls: false,
-			 androidhls: true
+				file: "http://online.video.rbc.ru/online/rbctv_224p/index.m3u8",
+				width: '220',
+				height: '123',
+				primary: 'html5',
+				androidhls: true,
+				autostart: false,
+				mute: true
 			});
 
-			$( document ).ready(function() {
-				setTimeout(function() {
-					$jp.play(); 
-				}, 2000);
-				setTimeout(function() { 
-					$jp.setFullscreen(true) 
-				}, 4000 );
+			$(document).ready(function() {
+				// setTimeout(function() {
+				// 	$jp.play();
+				// }, 2000);
+				// setTimeout(function() {
+				// 	//$jp.setFullscreen(true) 
+				// }, 4000);
 			});
+
+			function btnClick(){
+				alert("Wow");
+
+			}
 		</script>
+		<input type="button" onclick="btnClick()">Change stream</input>
 	</body>
 </html>
