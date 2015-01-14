@@ -41,7 +41,7 @@
 				$theStream = $dimensions[$('#qualitySelector').val()];
 
 				$('#doSomething').click(function() {
-					$player = $('my-video');
+					$player = $('#my-video');
 					$player.setup({
 						width: $theStream.width,
 						height: $theStream.height,
@@ -49,7 +49,7 @@
 					$player.load([{
 						file: $theStream.source
 					}]);
-					$('my-video').play(true);
+					$player.play(true);
 				});
 			});
 		</script>
