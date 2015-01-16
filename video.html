@@ -8,7 +8,6 @@
 	<body>
 		<h1>Video demo for rbc.ru</h1>
 		<div id="my-video"></div>
-		<input id="doSomething" type="submit" value="Do something" />
 		<select id="qualitySelector" name="Quality" value="auto">
 			<option value="p128">128p - 228x128</option>
 			<option value="p224">224p - 398x224</option>
@@ -24,7 +23,7 @@
 		<script type="text/javascript">
 			$(document).ready(function() {
 
-				$('#doSomething').click(manualChangeQuality);
+				$('#qualitySelector').change(manualChangeQuality);
 				manualChangeQuality();
 
 				$('#qualityUp').click(function() {
