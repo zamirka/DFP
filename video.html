@@ -33,7 +33,7 @@
 						$qualityLevels = $player.getQualityLevels();
 						$currentLevel = $player.getCurrentQuality();
 						if (++$currentLevel < $qualityLevels.length) {
-							$player.setQualityLevel($currentLevel);
+							$player.setCurrentQuality($currentLevel);
 						}
 					} else {
 						alert("Please select autoswitch");
@@ -47,7 +47,7 @@
 						$qualityLevels = $player.getQualityLevels();
 						$currentLevel = $player.getCurrentQuality();
 						if (--$currentLevel >= 0) {
-							$player.setQualityLevel($currentLevel);
+							$player.setCurrentQuality($currentLevel);
 						}
 					} else {
 						alert("Please select autoswitch");
