@@ -15,12 +15,18 @@
 			<option value="p360">360p - 640x360</option>
 			<option value="p480">480p - 854x480</option>
 			<option value="p576">576p - 1024x576</option>
+			<option value="auto">480p - 854x480</option>
 		</select>
-		
+		<input id="showQualityLevels" type="submit" value="Show quality levels" />
 		<script type="text/javascript">
 			$(document).ready(function() {
 				$('#doSomething').click(manualChangeQuality);
 				manualChangeQuality();
+				$('#showQualityLevels').click(function(){
+					$player = jwplayer("my-video");
+					alert($player.getQualityLevels());
+
+				});
 			});
 
 			function manualChangeQuality() {
@@ -29,7 +35,8 @@
 				"p224": {"width": "398", "height": "224", "source": "http://online.video.rbc.ru/online/rbctv_224p/index.m3u8"},\
 				"p360": {"width": "640", "height": "360", "source": "http://online.video.rbc.ru/online/rbctv_360p/index.m3u8"},\
 				"p480": {"width": "854", "height": "480", "source": "http://online.video.rbc.ru/online/rbctv_480p/index.m3u8"},\
-				"p576": {"width": "1024", "height":"576", "source": "http://online.video.rbc.ru/online/rbctv_576p/index.m3u8"}}');
+				"p576": {"width": "1024", "height": "576", "source": "http://online.video.rbc.ru/online/rbctv_576p/index.m3u8"},\
+				"auto": {"width": "854", "height": "480", "source": "http://online.video.rbc.ru/online/rbctv.m3u8"}}');
 				$theStream = $dimensions[$('#qualitySelector').val()];
 				$player = jwplayer("my-video");
 				$player.setup({
