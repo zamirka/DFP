@@ -45,7 +45,7 @@
 						$player = jwplayer("my-video");
 						$qualityLevels = $player.getQualityLevels();
 						$currentLevel = $player.getCurrentQuality();
-						if (++$currentLevel < $qualityLevels.length) {
+						if (--$currentLevel >= 0) {
 							$player.setQualityLevel($currentLevel);
 						} else {
 							alert("Please select autoswitch");
