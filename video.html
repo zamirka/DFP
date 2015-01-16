@@ -9,7 +9,7 @@
 		<h1>Video demo for rbc.ru</h1>
 		<div id="my-video"></div>
 		<input id="doSomething" type="submit" value="Do something" />
-		<select id="qualitySelector" name="Quality">
+		<select id="qualitySelector" name="Quality" value="auto">
 			<option value="p128">128p - 228x128</option>
 			<option value="p224">224p - 398x224</option>
 			<option value="p360">360p - 640x360</option>
@@ -18,8 +18,8 @@
 			<option value="auto">Autoswitch</option>
 		</select>
 		
-		<input id="qualityUp" type="submit" value="Quality up" />
-		<input id="qualityDown" type="submit" value="Quality down" />
+		<input id="qualityUp" type="submit" value="Quality down" />
+		<input id="qualityDown" type="submit" value="Quality up" />
 
 		<script type="text/javascript">
 			$(document).ready(function() {
