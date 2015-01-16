@@ -15,17 +15,42 @@
 			<option value="p360">360p - 640x360</option>
 			<option value="p480">480p - 854x480</option>
 			<option value="p576">576p - 1024x576</option>
-			<option value="auto">480p - 854x480</option>
+			<option value="auto">Autoswitch</option>
 		</select>
-		<input id="showQualityLevels" type="submit" value="Show quality levels" />
+		
+		<input id="qualityUp" type="submit" value="Quality up" />
+		<input id="qualityDown" type="submit" value="Quality down" />
+
 		<script type="text/javascript">
 			$(document).ready(function() {
+
 				$('#doSomething').click(manualChangeQuality);
 				manualChangeQuality();
-				$('#showQualityLevels').click(function(){
-					$player = jwplayer("my-video");
-					alert($player.getQualityLevels());
 
+				$('#qualityUp').click(function() {
+					if ($('#qualitySelector').val() == "auto") {
+						$player = jwplayer("my-video");
+						$qualityLevels = $player.getQualityLevels();
+						$currentLevel = $player.getCurrentQuality();
+						if (++$currentLevel < $qualityLevels.length) {
+							$player.setQualityLevel($currentLevel);
+						} else {
+							alert("Please select autoswitch");
+						}
+					}
+				});
+
+				$('#qualityDown').click(function() {
+					if ($('#qualitySelector').val() == "auto") {
+						$player = jwplayer("my-video");
+						$qualityLevels = $player.getQualityLevels();
+						$currentLevel = $player.getCurrentQuality();
+						if (++$currentLevel < $qualityLevels.length) {
+							$player.setQualityLevel($currentLevel);
+						} else {
+							alert("Please select autoswitch");
+						}
+					}
 				});
 			});
 
@@ -45,7 +70,7 @@
 					height: $theStream.height,
 					primary: 'html5',
 					androidhls: true,
-					autostart: false,
+					autostart: true,
 					mute: true
 				});
 			}
